@@ -588,7 +588,7 @@ checksum = "2dffe52ecf27772e601905b7522cb4ef790d2cc203488bbd0e2fe85fcb74566d"
 [[package]]
 name = "mio"
 version = "0.8.3"
-source = "git+https://github.com/WasmEdge/mio.git?branch=wasmedge#47d90badbd574da60b5dad3dad29cb6675ef9041"
+source = "git+https://github.com/WasmEdge/mio.git?branch=wasmedge#8d25c6ba28fb46227a28b2e9cc7b51b8bf1f967d"
 dependencies = [
  "libc",
  "log",

@@ -90,7 +90,7 @@ async fn handler_jwt(body: Body) -> Result<Response<Body>, hyper::Error> {
     let url2 = url2.unwrap();
     let resp = tokio::time::timeout(tokio::time::Duration::from_secs(10), fetch_url(url2)).await;
     match resp {
-        Err(e) => Ok(Response::new(Body::from("timeout"))),
+        Err(_) => Ok(Response::new(Body::from("timeout"))),
         Ok(Ok(resp)) => Ok(resp),
         Ok(Err(e)) => Ok(Response::builder()
             .status(500)
